@@ -9,7 +9,7 @@ body {
  
 /* Styles the header */
 header {
-    background-color: olive; 
+    background-color: darkolivegreen; 
     color: white; 
     text-align: center;
     padding: 18px;
@@ -46,7 +46,7 @@ nav ul li a {
  
 /* Changes the link when you hover over it */
 nav ul li a:hover {
-    background-color: wheat; 
+    background-color: darkgoldenrod; 
     color: darkolivegreen; 
 }
  
@@ -60,8 +60,8 @@ main {
  
 /* Styles each section box */
 section {
-    background-color: white; 
-    border: 1px solid darkgray; 
+    background-color: lightgray; 
+    border: 1px solid dimgray; 
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -81,7 +81,7 @@ section p {
  
 /* Styles the footer */
 footer {
-    background-color: darkkhaki;
+    background-color: saddlebrown;
     color: white; 
     text-align: center;
     padding: 15px;
