@@ -78,7 +78,71 @@ section p {
     line-height: 1.6;
 }
  
+/* Titles the table */
+table caption {
+    font-size: 18px;
+    font-weight: bold;
+    color: olive;
+    text-align: center;
+    margin-bottom: 8px;
+}
  
+/* Background color applied to 1st and 3rd columns via colgroup */
+col.col-highlight {
+    background-color: darkkhaki;
+}
+ 
+/* Full-width table with borders */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 15px;
+    border: 2px solid dimgray;
+}
+ 
+/* Header row background */
+thead tr {
+    background-color: darkolivegreen;
+    color: white;
+}
+ 
+/* Header cells */
+thead th {
+    padding: 12px 14px;
+    text-align: left;
+    border: 1px solid dimgray;
+}
+ 
+/* Body rows */
+tbody tr {
+    border-bottom: 1px solid dimgray;
+}
+ 
+/* Body cells */
+tbody td {
+    padding: 12px 14px;
+    border: 1px solid dimgray;
+    vertical-align: middle;
+    color: darkolivegreen;
+}
+ 
+/* Footer row */
+tfoot td {
+    padding: 10px 14px;
+    border: 1px solid dimgray;
+    font-style: italic;
+    text-align: center;
+    background-color: darkkhaki;
+    color: darkolivegreen;
+}
+ 
+/* Image placeholder cell sizing */
+.img-cell {
+    width: 130px;
+    text-align: center;
+}
+  
 /* Styles the footer */
 footer {
     background-color: drakkhaki;
