@@ -1,172 +1,200 @@
-/* This styles the whole page */
+/* styles.css — Ortiz Lemonade Stand */
+
+/* rest */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  body */
 body {
-    background-color: beige; /* Background color of the whole page to beige */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: darkolivegreen; /* Color of all the text on the page to dark olive green */
+    margin: 0;
+    padding: 0;
+    background-color: #fdf8e1;
+    font-family: Arial, sans-serif;
 }
- 
- 
-/* Styles the header */
+
+/* ── Global link hover ─── */
+a {
+    color: #b8960c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f5c300;
+    text-decoration: underline;
+}
+
+/* ── Header ─── */
 header {
-    background-color: darkolivegreen; 
-    color: white; 
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 18px;
+    padding: 20px;
+    border-bottom: 4px solid #f5c300;
 }
- 
-/* Main title bigger and bold */
+
 header h1 {
-    font-size: 24px;
-    font-weight: bold;
+    margin: 0 0 16px 0;
+    color: #f5c300;
 }
- 
- 
-/* Navigation menu */
-/* I removed the bullet points from the list */
+
+/* ── Navigation (inside header) ── */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
- 
-/* Nav links go side by side instead of up and down */
+
 nav ul li {
-    display: inline;
-    margin: 5px;
+    margin: 0 15px;
 }
- 
-/* Styles each link in the nav */
+
 nav ul li a {
-    color: white; 
+    color: white;
+    background-color: #333;
+    padding: 12px 20px;
     text-decoration: none;
-    padding: 8px 16px;
-    font-weight: bold;
-    /* CSS Transition: smoothly animates background color change on hover */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
- 
-/* Changes the link when you hover over it */
+
 nav ul li a:hover {
-    background-color: darkgoldenrod; 
-    color: darkolivegreen; 
+    background-color: #555;
+    color: #f5c300;
+    text-decoration: none;
 }
- 
- 
-/* Adds spacing around the main content */
+
+/* ── Main content area ──*/
 main {
+    max-width: 960px;
     margin: 30px auto;
-    max-width: 860px;
-    padding: 0 20px;
+    padding: 0 16px;
 }
- 
-/* Styles each section box */
+
+/* ── Sections ── */
 section {
-    background-color: lightgray; 
-    border: 1px solid dimgray; 
+    background-color: #fffef5;
     padding: 20px;
-    margin-bottom: 20px;
-    /* CSS Transition: smoothly animates the zoom effect on hover */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 24px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #f5c300;
 }
 
-/* CSS Transformation: zoom in each section when hovered */
-section:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-}
-
-/* Heading inside each section */
 section h2 {
-    color: olive; 
-    font-size: 22px;
+    margin-top: 0;
+    color: #333;
 }
- 
-/* Paragraph text inside each section */
-section p {
-    color: darkolivegreen; 
-    line-height: 1.6;
-}
- 
-/* Titles the table */
-table caption {
-    font-size: 18px;
-    font-weight: bold;
-    color: olive;
-    text-align: center;
-    margin-bottom: 8px;
-}
- 
-/* Background color applied to 1st and 3rd columns via colgroup */
-col.col-highlight {
-    background-color: ;
-}
- 
-/* Full-width table with borders */
+
+/* ── Table ── */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
-    font-size: 15px;
-    border: 2px solid dimgray;
 }
- 
-/* Header row background */
+
+caption {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+/* colgroup — columns 1 and 3 shaded */
+col.col-highlight {
+    background-color: #f9f9f9;
+}
+
+/* All cells */
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Header row */
 thead tr {
-    background-color: darkolivegreen;
+    background-color: #444;
     color: white;
 }
- 
-/* Header cells */
+
 thead th {
-    padding: 12px 14px;
-    text-align: left;
-    border: 1px solid dimgray;
+    color: white;
 }
- 
-/* Body rows */
-tbody tr {
-    border-bottom: 1px solid dimgray;
+
+/* Zebra stripe on tbody rows */
+tbody tr:nth-child(even) {
+    background-color: #fffde7;
 }
- 
-/* Body cells */
-tbody td {
-    padding: 12px 14px;
-    border: 1px solid dimgray;
-    vertical-align: middle;
-    color: darkolivegreen;
+
+/* Table row hover */
+tbody tr:hover {
+    background-color: #fff3b0;
+    cursor: default;
 }
- 
+
 /* Footer row */
-tfoot td {
-    padding: 10px 14px;
-    border: 1px solid dimgray;
+tfoot tr {
+    text-align: center;
     font-style: italic;
-    text-align: center;
-    background-color: darkkhaki;
-    color: darkolivegreen;
+    border-top: 2px solid #ccc;
 }
- 
-/* Image placeholder cell sizing */
-.img-cell {
-    width: 130px;
-    text-align: center;
+
+tfoot td {
+    background-color: #fff9c4;
+    color: #555;
 }
-  
-/* Styles the footer */
+
+/* ── Footer ── */
 footer {
-    background-color: drakkhaki;
-    color: white; 
+    background-color: #333;
+    color: #ccc;
     text-align: center;
-    padding: 15px;
+    padding: 16px;
+    font-size: 0.875rem;
+    border-top: 4px solid #f5c300;
 }
- 
-/* Hides the hr line inside the footer */
-footer hr {
-    display: none;
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    /* stacks fields top to bottom */
+    gap: 6px;
+    max-width: 480px;
+    margin-top: 20px;
 }
- 
-/* Making the footer text smaller */
-footer p {
-    font-size: 14px;
+
+/* Inputs & textarea — smooth border color change */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    transition: border-color 0.3s ease;
+}
+
+/* Hover effect */
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-color: #f5c300;
+}
+
+/* Focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #b8960c;
+    box-shadow: 0 0 5px rgba(245, 195, 0, 0.5);
+}
+
+/* Submit button — smooth background color change */
+.contact-form button[type="submit"] {
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #d4a900;
 }
