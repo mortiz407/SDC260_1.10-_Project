@@ -1,138 +1,184 @@
 <!DOCTYPE html>
 
-<!-- set languge to english -->
 <html lang="en">
 
-    <!--Create a head section-->
-    <head>
+<head>
 
-        <!--Using utf-8 characters-->
-        <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Storefront" />
+    <meta name="keywords" content="home, products, contact" />
+    <meta name="author" content="Manuel Ortiz" />
+    <meta name="studentID" content="ManOrt0727" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <title>Ortiz Lemonade Stand&mdash; ManOrt0727</title>
+    <link rel="stylesheet" href="styles.css" />
 
-        <!--Description of the page-->
-        <meta name="description" content="My Webpage" />
+</head>
 
-        <!--Keywords in the page-->
-        <meta name="keywords" content="about, projects, contact" />
+<body>
 
-        <!--Author name-->
-        <meta name="author" content="Manuel Ortiz" />
+    <header>
 
-        <!--Page to fit all screens-->
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+        <h1>Ortiz Lemonade Stand &mdash; ManOrt0727</h1>
 
-        <!--Title-->
-        <title>My Webpage</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
+        <nav>
 
-    <!--Create a body section-->
-    <body>
-        <header>
-            <!--Welcoming people to my page-->
-            <h1>Welcome to my Webpage test</h1>
+            <ul>
 
-            <!--navigation menu with a bulleted list-->
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+                <li><a href="#home">Home</a></li>
 
-        <!--Main section with three sections inside-->
-        <main>
+                <li><a href="#products">Products</a></li>
 
-            <!--About section-->
-            <section id="about">
-                <h2>About</h2>
-                <p>This is the About scetion.</p>
-            </section>
+                <li><a href="#contact">Contact</a></li>
 
-            <!--Projects section-->
-            <section id="projects">
-                <h2>Projects</h2>
-                <p>This is the Projects section.</p>
+            </ul>
 
-                <!-- Project table with caption, colgroup, thead, tbody, tfoot -->
-                <table>
-                    <caption>Sample Project Showcase</caption>
- 
-                    <!-- Apply background color to the 1st and 3rd columns -->
-                    <colgroup>
-                        <col class="col-highlight" />
-                        <col />
-                        <col class="col-highlight" />
-                    </colgroup>
- 
-                    <thead>
-                        <tr>
-                            <th>Project Name</th>
-                            <th>Description</th>
-                            <th>Preview</th>
-                        </tr>
-                    </thead>
- 
-                    <tbody>
-                        <tr>
-                            <td>Project 1</td>
-                            <td>A sample project used to demonstrate HTML table structure.</td>
-                            <td class="img-cell">
-                                <img src="https://via.placeholder.com/110x72/6b8e23/ffffff?text=Project+1" alt="Project 1 preview">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Project 2</td>
-                            <td>A sample project used to demonstrate HTML table structure.</td>
-                            <td class="img-cell">
-                                <img src="https://via.placeholder.com/110x72/6b8e23/ffffff?text=Project+2" alt="Project 2 preview">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Project 3</td>
-                            <td>A sample project used to demonstrate HTML table structure.</td>
-                            <td class="img-cell">
-                                <img src="https://via.placeholder.com/110x72/6b8e23/ffffff?text=Project+3" alt="Project 3 preview">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Project 4</td>
-                            <td>A sample project used to demonstrate HTML table structure.</td>
-                            <td class="img-cell">
-                                <img src="https://via.placeholder.com/110x72/6b8e23/ffffff?text=Project+4" alt="Project 4 preview">
-                            </td>
-                        </tr>
-                    </tbody>
- 
-                    <tfoot>
-                        <tr>
-                            <td colspan="3">More projects coming soon &mdash; check back later!</td>
-                        </tr>
-                    </tfoot>
-                </table>
- 
-            </section>
-            <!--Contact section-->
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>This is the Contact section.</p>
-            </section>
+        </nav>
 
-            <!--Contact section-->
-            <section>
-                <h2>Contact</h2>
-                <p>This is the Contact section.</p>
-            </section>
-        </main>
+    </header>
 
-        <!--Creating a footer-->
-        <footer>
+    <main>
 
-            <!--creating a dividing line-->
-            <hr>
-            <p>Copyright &copy; &mdash; 2026 Manuel Ortiz &mdash; All right reserved.</p>
-        </footer>
-    </body>
+        <section id="home">
+
+            <h2>Home</h2>
+
+            <p>This is the Home scetion.</p>
+
+        </section>
+
+        <section id="products">
+
+            <h2>Products</h2>
+
+            <p>Our Drink Menu</p>
+
+            <table>
+
+                <colgroup>
+
+                    <col class="col-highlight" />
+
+                    <col />
+
+                    <col class="col-highlight" />
+
+                    <col />
+
+                </colgroup>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Drink</th>
+                        <th>Fruit</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Classic Lemonade</td>
+                        <td>Fresh Lemon</td>
+                        <td>Fresh lemons and pure cane sugar.</td>
+                        <td>$4.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mango Madness</td>
+                        <td>Mango</td>
+                        <td>Sweet mango and zesty lemon blend.</td>
+                        <td>$4.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Crimson Crush</td>
+                        <td>Cherry</td>
+                        <td>Bold, sweet-tart cherries for a classic red finish.</td>
+                        <td>$4.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Blue Ridge Bliss</td>
+                        <td>Blueberry</td>
+                        <td>Deep mountain blueberries for a smooth treat.</td>
+                        <td>$4.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Midnight Merlot</td>
+                        <td>Grape and Raspberry</td>
+                        <td>Deep purple grapes and tart raspberries for a bold sweetness.</td>
+                        <td>$4.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Islander Punch</td>
+                        <td>Pineapple</td>
+                        <td>Sharp, sunny pineapple tang from the beach to San Antonio</td>
+                        <td>$4.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Summer Solstice</td>
+                        <td>Watermelon</td>
+                        <td>Crisp, hydrating, and ultra-refreshing real watermelon.</td>
+                        <td>$4.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Southern Silk</td>
+                        <td>Peach</td>
+                        <td>A smooth, velvety blend of sun-drenched Georgia peaches.</td>
+                        <td>$4.00</td>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+
+                    <tr>
+
+                        <td colspan="4">More flavors coming soon &mdash; check back later!</td>
+
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!--Contact section-->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <strong>info@ortizlemonadestand.com</strong></p>
+            <p>Phone: <strong>(123) 456-7890</strong></p>
+            <p>Address: <strong>123 Lemon Lane, San Antonio, TX 78201</strong></p>
+
+            <form class="contact-form" action="#" method="post">
+
+                <!-- NAME FIELD -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name...">
+
+                <!-- EMAIL FIELD -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email...">
+
+                <!-- MESSAGE FIELD -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message..."></textarea>
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit">Send Message</button>
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright&copy; &mdash; 2024 Ortiz Lemonade Stand. &mdash;&mdash;&mdash; All rights reserved.</p>
+    </footer>
+</body>
+
 </html>
